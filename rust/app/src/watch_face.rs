@@ -126,7 +126,7 @@ pub fn set_power_label(widgets: &WatchFaceWidgets, state: &WatchFaceState) -> Lv
         BATTERY_STATUS.clear();
         write!(
             &mut BATTERY_STATUS, 
-            "{} {}%{}#\nRUST ({}mV)\0",  //  Must terminate Rust strings with null
+            "{} {}%{}#\nRUST-RIOT\nFanda ({}mV)\0",  //  Must terminate Rust strings with null
             color,
             percentage,
             symbol,
